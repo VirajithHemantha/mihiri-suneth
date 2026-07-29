@@ -623,7 +623,7 @@ export default function WeddingInvitation() {
                     <div className="absolute inset-0 border border-[#5C3A21]/30" style={{ clipPath: 'polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px)' }}></div>
                     <div className="absolute inset-1 border border-[#5C3A21]/20 pointer-events-none" style={{ clipPath: 'polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px)' }}></div>
                     
-                    <div className="py-6 px-4 flex flex-col items-center justify-center text-[#3E2723] font-cinzel text-[11px] md:text-xs tracking-[0.1em] relative z-10 font-bold leading-relaxed">
+                    <div className="py-6 px-4 flex flex-col items-center justify-center text-[#3E2723] font-cinzel text-xs md:text-sm tracking-[0.1em] relative z-10 font-bold leading-relaxed">
                       <span>MR. ANANDA JAYASEKARA &</span>
                       <span>MRS. JANAKIE JAYASEKARA</span>
                     </div>
@@ -663,7 +663,7 @@ export default function WeddingInvitation() {
                     <div className="absolute inset-0 border border-[#5C3A21]/30" style={{ clipPath: 'polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px)' }}></div>
                     <div className="absolute inset-1 border border-[#5C3A21]/20 pointer-events-none" style={{ clipPath: 'polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px)' }}></div>
                     
-                    <div className="py-5 px-4 flex flex-col items-center justify-center text-[#3E2723] font-cinzel text-[10px] md:text-[11px] tracking-[0.1em] relative z-10 font-bold leading-relaxed">
+                    <div className="py-5 px-4 flex flex-col items-center justify-center text-[#3E2723] font-cinzel text-xs md:text-sm tracking-[0.1em] relative z-10 font-bold leading-relaxed">
                       <span>MR. S. ABEYSIRIWARDHANA &</span>
                       <span>THE LATE MRS. LEELA</span>
                       <span>WICKRAMARACHCHI</span>
@@ -967,7 +967,7 @@ export default function WeddingInvitation() {
                   </div>
 
                   <h2 className="font-cinzel text-5xl md:text-9xl text-[#996515] leading-tight font-light uppercase tracking-tight relative">
-                    {INVITATION.venue.name.split(" ")[0].toUpperCase()} <span className="block md:inline font-playball normal-case text-4xl md:text-8xl text-[#FFCBA4] md:-ml-8 relative z-10 translate-y-4 md:translate-y-0 italic drop-shadow-sm">{INVITATION.venue.name.split(" ").slice(1).join(" ")}</span>
+                    {INVITATION.venue.name.split(" ")[0].toUpperCase()} <span className="block md:inline font-playball normal-case text-4xl md:text-8xl text-[#8C6D53] md:-ml-8 relative z-10 translate-y-4 md:translate-y-0 italic drop-shadow-sm">{INVITATION.venue.name.split(" ").slice(1).join(" ")}</span>
                   </h2>
 
                   <div className="max-w-xl mx-auto pt-10 relative">
