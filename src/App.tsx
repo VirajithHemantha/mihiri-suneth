@@ -425,7 +425,7 @@ export default function WeddingInvitation() {
             <section className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#FDF8F5]">
               
               {/* Background Image - used for both mobile and desktop */}
-              <div className="absolute inset-0 bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url("/ChatGPT Image Jul 30, 2026, 03_06_30 AM.png")' }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/ChatGPT Image Jul 30, 2026, 03_06_30 AM.png")' }} />
               
               {/* Overlay for better text readability */}
               <div className="absolute inset-0 bg-[#FDF8F5]/20 pointer-events-none" />
@@ -578,7 +578,7 @@ export default function WeddingInvitation() {
             <section id="details" className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center overflow-hidden bg-[#FDF8F5]">
               
               {/* Background Image - used for both mobile and desktop */}
-              <div className="absolute inset-0 bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url("/ChatGPT Image Jul 30, 2026, 03_14_21 AM.png")' }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/ChatGPT Image Jul 30, 2026, 03_14_21 AM.png")' }} />
               
               {/* Overlay for better text readability */}
               <div className="absolute inset-0 bg-[#FDF8F5]/20 pointer-events-none" />
@@ -715,7 +715,7 @@ export default function WeddingInvitation() {
             {/* Schedule Section */}
             <section className="relative py-12 md:py-32 bg-[#FDF8F5] overflow-hidden flex flex-col items-center w-full">
               {/* Background Image */}
-              <div className="absolute inset-0 bg-cover bg-center bg-fixed opacity-40 pointer-events-none" style={{ backgroundImage: 'url("/ChatGPT Image Jul 30, 2026, 03_14_21 AM.png")' }} />
+              <div className="absolute inset-0 bg-cover bg-center opacity-40 pointer-events-none" style={{ backgroundImage: 'url("/ChatGPT Image Jul 30, 2026, 03_14_21 AM.png")' }} />
 
               {/* Starry/Magical Background adapting to light theme */}
               <div className="absolute inset-0 pointer-events-none opacity-40">
