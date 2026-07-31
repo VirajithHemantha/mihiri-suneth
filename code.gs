@@ -2,14 +2,14 @@
  * Google Apps Script Web App for Wedding RSVP + Wishes
  *
  * Spreadsheet:
- * https://docs.google.com/spreadsheets/d/1DWeuLq0XoCdg0PFXg_uoCuHjW_WVnyam6z0V-zTWn9g/edit
+ * https://docs.google.com/spreadsheets/d/17Cgh9Rp3TWIoduktWyWitcJbJgHdP01An9Rbn4mn1BE/edit
  *
  * Required sheets:
  * - rsvp
  * - wish
  */
 
-const SPREADSHEET_ID = "1DWeuLq0XoCdg0PFXg_uoCuHjW_WVnyam6z0V-zTWn9g";
+const SPREADSHEET_ID = "17Cgh9Rp3TWIoduktWyWitcJbJgHdP01An9Rbn4mn1BE";
 const RSVP_SHEET_NAME = "rsvp";
 const WISH_SHEET_NAME = "wish";
 
@@ -53,27 +53,23 @@ function saveRsvp_(params) {
   ensureHeader_(sheet, [
     "timestamp",
     "name",
-    "guests",
-    "attendance",
-    "dietaryNotes",
+    "attendance"
   ]);
 
   const name = String(params.name || "").trim();
   const guests = String(params.guests || "").trim();
-  const dietaryNotes = String(params.dietaryNotes || "").trim();
 
   if (!name) {
     return { ok: false, message: "Name is required" };
   }
 
-  const attendance = guests === "0" ? "Declined" : "Attending";
+  // The website sends guests = "1" for attending, "0" for declining
+  const attendance = guests === "0" ? "No" : "Yes";
 
   sheet.appendRow([
     new Date(),
     name,
-    guests || "1",
-    attendance,
-    dietaryNotes,
+    attendance
   ]);
 
   return { ok: true, message: "RSVP saved" };
@@ -98,10 +94,10 @@ function saveWish_(params) {
 
 function getSheet_(sheetName) {
   const spreadsheet = SpreadsheetApp.openById(SPREADSHEET_ID);
-  const sheet = spreadsheet.getSheetByName(sheetName);
+  let sheet = spreadsheet.getSheetByName(sheetName);
 
   if (!sheet) {
-    throw new Error("Sheet not found: " + sheetName);
+    sheet = spreadsheet.insertSheet(sheetName);
   }
 
   return sheet;

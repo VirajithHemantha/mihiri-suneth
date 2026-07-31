@@ -31,7 +31,7 @@ const INVITATION = {
 } as const;
 
 const backgroundMusic = "/Nim Him Sewwa  Romantic Live Violin & Piano Cover  Shahen Thilakaratne.mp3";
-const googleScriptUrl = import.meta.env.VITE_GOOGLE_SCRIPT_URL?.trim() || "";
+const googleScriptUrl = "https://script.google.com/macros/s/AKfycbwiv-SlaxoMXmHz7jhAJNmhST6eP0gnTPQKTC-Yqk_rfnlXK1tX3X6lLPZGZ7qm1cKj/exec";
 
 const publicImagePath = (fileName: string) => `/images/${fileName.replaceAll(" ", "%20")}`;
 
@@ -1452,8 +1452,13 @@ export default function WeddingInvitation() {
                 </div>
 
                 {/* Copyright Text */}
-                <p className="text-[#333333] text-[9px] md:text-xs tracking-[0.6em] font-cinzel uppercase font-bold mb-8">
+                <p className="text-[#333333] text-[9px] md:text-xs tracking-[0.6em] font-cinzel uppercase font-bold mb-2">
                   © 2026 {INVITATION.couple.bride} & {INVITATION.couple.groom}
+                </p>
+
+                {/* Promo Text */}
+                <p className="text-[#333333]/80 text-[10px] md:text-xs font-sans tracking-wider mb-8">
+                  Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-[#996515] hover:text-[#D4AF37] underline underline-offset-2 font-bold transition-colors" href="https://wa.me/94707819074">invitemint</a>
                 </p>
 
                 {/* Bottom Heart Ornament */}
